@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+    
+    
+    .mySlides {display: none;}
+
+.container zone red {
+    height:500px;
+  margin: auto;
+    
+}
+        .im {
+            position:absolute;
+            top:70px;
+            left:0px;
+            right:0px;
+            height:680px;
+            width:1519px;
+        }
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+       
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade-in {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade-in {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+    
+    </style>
+  <title>Smart Globe</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <!-- <script src="https://kit.fontawesome.com/a98aba4705.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <nav class="zone green sticky">
+  	<ul class="main-nav">
+  		<li><a class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-mobile fa-2x logo-animate" style="margin-top: -10px;position: relative; transform: rotate(-40deg); margin-right: 5px;" aria-hidden="true"></i><i class="fa fa-mobile fa-2x logo-animate" style="margin-top: -10px;" aria-hidden="true"></i><i class="fa fa-mobile fa-2x logo-animate" style="margin-top: -10px; position: relative; transform: rotate(40deg); margin-left: 5px;" aria-hidden="true"></i></a></li>
+  		<li class="brand">Smart Globe</li>
+  		<li class="push"><a class="btn-floating btn-large waves-effect waves-light" href="../payment/payment.html"><i class="material-icons">shopping_cart</i></a></li>
+  	</ul>
+  </nav>
+  <div class="container zone red">
+  	    <div class="mySlides fade">
+		  <img class="im" src="img/Background.jpg">
+		</div>
+
+		<div class="mySlides fade">
+		  <img class="im" src="img/iphone11-back.jpg" >
+		</div>
+
+		<div class="mySlides fade">
+		  <img class="im" src="img/note10-back.jpg">
+		</div>
+		      <div class="mySlides fade">
+		  <img class="im" src="img/iphone-xr-back.jpg">
+		</div>
+		      <div class="mySlides fade">
+		  <img class="im" src="img/oppo-reno-4-back.jpg">
+		</div>
+		    </div>
+		    
+		    
+		    <div style="text-align:center">
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+  </div>
+  <div class="zone blue grid-wrapper">
+  	<div class="box zone rate-card">
+		
+		<img src="img/all.png" style="margin-top: 100px;" alt="">
+		
+		<div class="button-animate">
+			<p class="brand-1">Apple Iphone 11</p>
+			<p class="description">The iPhone 11 succeeds the iPhone XR, and it features a 6.1-inch LCD display that Apple calls a "Liquid Retina HD Display." It features a 1792 x 828 resolution at 326ppi, a 1400:1 contrast ratio, 625 nits max brightness, True Tone support for adjusting the white balance to the ambient lighting, and wide color support for true-to-life colors.</p>
+			<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $699 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$799</del></span>
+			
+			<span class="product-rating" style="font-size: small;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o empty"></i>
+				
+			</span><br/>
+
+			
+			<a href="../products-page/iphone11/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+		</div>
+		
+	</div>
+	<div class="box zone rate-card">
+		
+		<img src="img/note10.jpg" alt="">
+		
+		<div class="button-animate">
+			<p class="brand-1">Samsung Galaxy Note 10</p>
+			<p class="description">Samsung Galaxy Note 10 is powered by a 1.9GHz octa-core Samsung Exynos 9825 processor that features 4 cores clocked at 1.9GHz, 2 cores clocked at 2.4GHz and 2 cores clocked at 2.7GHz. It comes with 8GB of RAM. The Samsung Galaxy Note 10 runs Android 9 Pie and is powered by a 3500mAh battery.</p>
+			<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $849 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$949</del></span>
+			
+			<span class="product-rating" style="font-size: small;">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o empty"></i>
+				
+			</span><br/>
+			
+			<a href="../products-page/Note10/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+		</div>
+		
+	</div>
+	  	<div class="box zone rate-card">
+			
+			<img src="img/all.png" style="margin-top: 100px;" alt="">
+			
+			<div class="button-animate">
+				<p class="brand-1">Apple Iphone 11</p>
+				<p class="description">The iPhone 11 succeeds the iPhone XR, and it features a 6.1-inch LCD display that Apple calls a "Liquid Retina HD Display." It features a 1792 x 828 resolution at 326ppi, a 1400:1 contrast ratio, 625 nits max brightness, True Tone support for adjusting the white balance to the ambient lighting, and wide color support for true-to-life colors.</p>
+				<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $699 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$799</del></span>
+				
+				<span class="product-rating" style="font-size: small;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o empty"></i>
+					
+				</span><br/>
+				
+				<a href="../products-page/iphone11/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+			</div>
+			
+		</div>
+		<div class="box zone rate-card">
+			
+			<img src="img/note10.jpg" alt="">
+			
+			<div class="button-animate">
+				<p class="brand-1">Samsung Galaxy Note 10</p>
+				<p class="description">Samsung Galaxy Note 10 is powered by a 1.9GHz octa-core Samsung Exynos 9825 processor that features 4 cores clocked at 1.9GHz, 2 cores clocked at 2.4GHz and 2 cores clocked at 2.7GHz. It comes with 8GB of RAM. The Samsung Galaxy Note 10 runs Android 9 Pie and is powered by a 3500mAh battery.</p>
+				<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $849 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$949</del></span>
+				
+				<span class="product-rating" style="font-size: small;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o empty"></i>
+					
+				</span><br/>
+				
+				<a href="../products-page/Note10/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+			</div>
+			
+		</div>
+	   	<div class="box zone rate-card">
+			
+			<img src="img/all.png" style="margin-top: 100px;" alt="">
+			
+			<div class="button-animate">
+				<p class="brand-1">Apple Iphone 11</p>
+				<p class="description">The iPhone 11 succeeds the iPhone XR, and it features a 6.1-inch LCD display that Apple calls a "Liquid Retina HD Display." It features a 1792 x 828 resolution at 326ppi, a 1400:1 contrast ratio, 625 nits max brightness, True Tone support for adjusting the white balance to the ambient lighting, and wide color support for true-to-life colors.</p>
+				<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $699 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$799</del></span>
+				
+				<span class="product-rating" style="font-size: small;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o empty"></i>
+					
+				</span><br/>
+				
+				<a href="../products-page/iphone11/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+			</div>
+			
+		</div>
+		<div class="box zone rate-card">
+			
+			<img src="img/note10.jpg" alt="">
+			
+			<div class="button-animate">
+				<p class="brand-1">Samsung Galaxy Note 10</p>
+				<p class="description">Samsung Galaxy Note 10 is powered by a 1.9GHz octa-core Samsung Exynos 9825 processor that features 4 cores clocked at 1.9GHz, 2 cores clocked at 2.4GHz and 2 cores clocked at 2.7GHz. It comes with 8GB of RAM. The Samsung Galaxy Note 10 runs Android 9 Pie and is powered by a 3500mAh battery.</p>
+				<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $849 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$949</del></span>
+				
+				<span class="product-rating" style="font-size: small;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o empty"></i>
+					
+				</span><br/>
+				
+				<a href="../products-page/Note10/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+			</div>
+			
+		</div>
+	    <div class="box zone rate-card">
+			
+			<img src="img/all.png" style="margin-top: 100px;" alt="">
+			
+			<div class="button-animate">
+				<p class="brand-1">Apple Iphone 11</p>
+				<p class="description">The iPhone 11 succeeds the iPhone XR, and it features a 6.1-inch LCD display that Apple calls a "Liquid Retina HD Display." It features a 1792 x 828 resolution at 326ppi, a 1400:1 contrast ratio, 625 nits max brightness, True Tone support for adjusting the white balance to the ambient lighting, and wide color support for true-to-life colors.</p>
+				<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $699 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$799</del></span>
+				
+				<span class="product-rating" style="font-size: small;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o empty"></i>
+					
+				</span><br/>
+				
+				<a href="../products-page/iphone11/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+			</div>
+			
+		</div>
+		<div class="box zone rate-card">
+			
+			<img src="img/note10.jpg" alt="">
+			
+			<div class="button-animate">
+				<p class="brand-1">Samsung Galaxy Note 10</p>
+				<p class="description">Samsung Galaxy Note 10 is powered by a 1.9GHz octa-core Samsung Exynos 9825 processor that features 4 cores clocked at 1.9GHz, 2 cores clocked at 2.4GHz and 2 cores clocked at 2.7GHz. It comes with 8GB of RAM. The Samsung Galaxy Note 10 runs Android 9 Pie and is powered by a 3500mAh battery.</p>
+				<span class="product-rating" style="font-size: 20px; text-align: left; margin-top: -10%;">From $849 <del class="product-old-price" style="font-size: 15px; margin-left: 20px;">$949</del></span>
+				
+				<span class="product-rating" style="font-size: small;">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o empty"></i>
+					
+				</span><br/>
+				
+				<a href="../products-page/Note10/index.html"><button class="btn product-rating-btn" style="margin: 0;">More Information</button></a>
+			</div>
+			
+		</div>
+  </div>
+      <footer>
+            <div class="row">
+                
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+               
+                
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google" class="ion-social-googleplus"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="ion-social-instagram"></ion-icon></a></li>
+                    </ul>
+                
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by SMARTGLOBE. All rights reserved.
+                </p>
+            </div>
+    </footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

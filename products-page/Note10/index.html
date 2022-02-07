@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Galaxy Note 10</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="robots" content="noindex,follow" />
+    
+    <style>
+        
+        th,td{
+            padding: 25px;
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+      <nav class="zone green sticky">
+          <ul class="main-nav">
+            <li><a class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-mobile fa-2x logo-animate" style="margin-top: -10px;position: relative; transform: rotate(-40deg); margin-right: 5px;" aria-hidden="true"></i><i class="fa fa-mobile fa-2x logo-animate"  style="margin-top: -10px;" aria-hidden="true"></i><i class="fa fa-mobile fa-2x logo-animate" style="margin-top: -10px; position: relative; transform: rotate(40deg); margin-left: 5px;" aria-hidden="true"></i></a></li>
+            <li class="brand">Smart Globe</li>
+            <li class="push"><a class="btn-floating btn-large waves-effect waves-light" href="../../payment/payment.html"><i class="material-icons">shopping_cart</i></a></li>
+          </ul>
+      </nav>
+    
+    
+    
+	<main class="container">
+		
+		<!-- Left Column / Phone Image -->
+		<div class="left-column">
+			<img data-image="all" class="active" src="images/note10.jpg" alt="">
+			<img data-image="aura_glow" src="images/aura_glow.webp" alt="">
+			<img data-image="aura_black" src="images/aura_black.webp" alt="">
+			<img data-image="aura_red" src="images/aura_red.webp" alt="">
+		</div>
+
+		<!-- Right Column -->
+		<div class="right-column">
+			
+			<!-- Product Description-->
+			<div class="product-description">
+				<span>SmartPhones</span>
+				<h1>Galaxy Note 10</h1>
+				<p>Samsung Galaxy Note 10 is powered by a 1.9GHz octa-core Samsung Exynos 9825 processor that features 4 cores clocked at 1.9GHz, 2 cores clocked at 2.4GHz and 2 cores clocked at 2.7GHz. It comes with 8GB of RAM. The Samsung Galaxy Note 10 runs Android 9 Pie and is powered by a 3500mAh battery.</p>
+			</div>
+
+			<!-- Product Configuration -->
+			<div class="product-configuration">
+				
+				<!-- Product Color -->
+				<div class="product-color">
+					<span>Color</span>
+
+					<div class="color-choose">
+						<div>
+							<input data-image="aura_red" type="radio" id="aura_red" name="color" value="red">
+            				<label for="aura_red"><span></span></label>
+						</div>
+						<div>
+							<input data-image="aura_glow" type="radio" id="aura_glow" name="color" value="black">
+            				<label for="aura_glow"><span></span></label>
+						</div>
+						<div>
+							<input data-image="aura_black" type="radio" id="aura_black" name="color" value="green">
+            				<label for="aura_black"><span></span></label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Storage Configuration -->
+				<div class="storage-config">
+					<span>Storage Capacity</span>
+
+					<div class="storage-choose">
+						<button onclick="myfunction64()">64GB</button>
+            <button onclick="myfunction128()">128GB</button>
+            <button onclick="myfunction256()">256GB</button>
+					</div>
+
+					<a href="#">How to configurate your Phone</a>
+				</div>
+			</div>
+
+			<!-- Product Pricing -->
+			<div class="product-price">
+				<span id="price">Please select a variant</span>
+                <button class="cart-btn" onclick="add()">Add to Cart</button>
+                <button class="cart-btn" onclick="remove()">Remove From Cart</button>
+				
+			</div>
+		</div>
+	</main>
+     <script>
+    
+    
+    
+    function add()
+        {
+    localStorage.setItem("GALAXY Note 10", "849");
+        }
+        function remove()
+        {
+            localStorage.removeItem("GALAXY Note 10");
+        }
+        
+    </script>
+    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+	<script src="script.js" charset="utf-8"></script>
+    
+    <div class="heading2">
+    
+      <h2>GENERAL SPECIFICATIONS</h2>
+    </div>
+    
+    
+    
+    <table class="adjust">
+       <tbody>
+        <tr>
+           <th rowspan="2" scope="row">LAUNCH</th>
+            <td class="SPEC-1">Announced</td>
+            <td class="SPEC-2">2019, August 23</td>
+           </tr>
+           
+           <tr>
+           <td class="SPEC-1"> Status</td>
+               <td class="SPEC-2">Available. Released 2019, August 23</td>  
+           </tr>
+        </tbody>
+    </table>
+    
+    <table class="adjust">
+       <tbody>
+        <tr>
+           <th rowspan="4" scope="row">DISPLAY</th>
+            <td class="SPEC-1">Type	</td>
+            <td class="SPEC-2">Dynamic AMOLED</td>
+           </tr>
+           
+           <tr>
+           <td class="SPEC-1">Size</td>
+               <td class="SPEC-2"> 15.94cm (6.3") full rectangle</td>  
+           </tr>
+          
+            <tr>
+           <td class="SPEC-1"> Resolution</td>
+               <td class="SPEC-2"> 2280 x 1080 (FHD+)</td>  
+           </tr>
+           <tr>
+           <td class="SPEC-1"> Protection</td>
+               <td class="SPEC-2">1,308 nits</td>  
+           </tr>  
+        </tbody>
+    </table>
+    
+    <table class="adjust">
+       <tbody>
+        <tr>
+           <th rowspan="2" scope="row">MEMORY</th>
+            <td class="SPEC-1">Card slot</td>
+            <td class="SPEC-2">No</td>
+           </tr>
+           
+           <tr>
+           <td class="SPEC-1"> Internal</td>
+               <td class="SPEC-2">64GB 6GB RAM, 128GB 6GB RAM, 256GB 8GB RAM</td>  
+           </tr>
+        </tbody>
+    </table>
+    
+ <table class="adjust">
+       <tbody>
+        <tr>
+           <th rowspan="3" scope="row">MAIN CAMERA</th>
+            <td class="SPEC-1">Tri</td>
+            <td class="SPEC-2">12.0 MP + 16.0 MP + 12.0 MP</td>
+           </tr>
+           
+           <tr>
+           <td class="SPEC-1"> Features</td>
+               <td class="SPEC-2">Optical Zoom at 2x , Digital Zoom up to 10x</td>  
+           </tr>
+           
+           
+            <tr>
+           <td class="SPEC-1">Video</td>
+               <td class="SPEC-2">UHD 4K (3840 x 2160)@60fps</td>  
+           </tr>
+           
+           
+           
+           
+        </tbody>
+    </table>
+    
+ <table class="adjust">
+       <tbody>
+        <tr>
+           <th rowspan="3" scope="row">SELFIE CAMERA</th>
+            <td class="SPEC-1">Single</td>
+            <td class="SPEC-2">10.0 MP</td>
+           </tr>
+           
+           <tr>
+           <td class="SPEC-1"> Features</td>
+               <td class="SPEC-2"> F2.2</td>  
+           </tr>
+           
+           
+            <tr>
+           <td class="SPEC-1">Video</td>
+               <td class="SPEC-2">UHD 4K (3840 x 2160)@60fps</td>  
+           </tr>
+           
+           
+           
+           
+        </tbody>
+    </table>
+    
+
+    
+     <table class="adjust">
+       <tbody>
+        <tr>
+           <th rowspan="4" scope="row">BATTERY</th>
+            <td class="SPEC-1" rowspan="4">Charging</td>
+            <td class="SPEC-2">Non-removable Li-Ion 3,500mAh battery (11.91 Wh)</td>
+           </tr>
+           
+           <tr>
+               <td class="SPEC-2">Fast charging 45W, 50% in 30 min</td>  
+           </tr>
+          
+            <tr>
+          
+               <td class="SPEC-2">USB Power Delivery 2.0</td>  
+           </tr>
+           <tr>
+          
+               <td class="SPEC-2">Qi wireless charging</td>  
+           </tr>  
+        </tbody>
+    </table>
+    
+    
+    
+     <table class="adjust">
+       <tbody>
+        <tr>
+           <th rowspan="4" scope="row">PLATFORM</th>
+            <td class="SPEC-1">OS</td>
+            <td class="SPEC-2">Android</td>
+           </tr>
+           
+           <tr>
+           <td class="SPEC-1">Chipset</td>
+               <td class="SPEC-2">Octa-core Exynos: 2*2.73 GHz Mongoose M4 2*2.4 GHz Cortex-A75 4*1.9 GHz Cortex-A55</td>  
+           </tr>
+          
+            <tr>
+           <td class="SPEC-1">CPU</td>
+               <td class="SPEC-2">Octa-core Exynos: 2*2.73 GHz Mongoose M4 2*2.4 GHz Cortex-A75 4*1.9 GHz Cortex-A55</td>  
+           </tr>
+           <tr>
+           <td class="SPEC-1">GPU</td>
+               <td class="SPEC-2">Exynos: Mali-G76 MP12</td>  
+           </tr>  
+        </tbody>
+    </table>
+    
+    
+    
+     <table class="adjust">
+       <tbody>
+        <tr>
+           <th scope="row">FEATURES</th>
+            <td class="SPEC-1">Sensors</td>
+            <td class="SPEC-2">Accelerometer Barometer Ultrasonic Fingerprint scanner Pressure sensor Magnetometer Gyroscope Hall sensor Proximity sensor RGB Light sensor, Physical sound volume keys USB-C charging/audio port S Pen</td>
+           </tr>
+           
+        </tbody>
+    </table>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer>
+            <div class="row">
+                
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+               
+                
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google" class="ion-social-googleplus"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="ion-social-instagram"></ion-icon></a></li>
+                    </ul>
+                
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by SMARTGLOBE. All rights reserved.
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
+
+
+
+

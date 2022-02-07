@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: royalblue;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: rgb(42, 69, 151);
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+table,tr,td,th{
+  text-align: left;
+  border: 2px solid transparent;
+  padding: 7px;
+
+}
+span.price {
+  float: right;
+  color: grey;
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* Remove default arrow */
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<form action="" method="POST">
+<center><h2 style="color: grey; font-family: Arial, Helvetica, sans-serif;">Proceed To Pay</h2><hr/></center>
+<p style="color:transparent">Please check the product price and then the mode of payment according to your convinence.</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3 style="color: rgb(94, 94, 94);">Billing Address</h3><hr style="margin-bottom: 40px;"/>
+            <label for="fname" style="color: grey;"><i class="fa fa-user" style="color: grey;"></i> Full Name</label>
+            <input type="text" required id="fname" name="firstname" minlength = "3" maxlength="15" placeholder="Full Name">
+            <label for="email" style="color: grey;"><i class="fa fa-envelope" style="color: grey;"></i> Email</label>
+            <input type="email" minlength="4" maxlength="30" required id="email" name="email" placeholder="example@demo.com">
+            <label for="adr" style="color: grey;"><i class="fa fa-address-card-o" style="color: grey;"></i> Address</label>
+            <input type="text" required id="adr" minlength="4" name="address" placeholder="Your address">
+            <label for="city" style="color: grey;"><i class="fa fa-institution" style="color: grey;"></i> City</label>
+            <input type="text" id="city" minlength="3" name="city" placeholder="Your City" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state" style="color: grey;">State</label>
+                <input required type="text" id="state" name="state" placeholder="State">
+              </div>
+              <div class="col-50">
+                <label for="zip" style="color: grey;">Zip</label>
+                <input type="number" required id="zip" minlength="4" name="zip" placeholder="******" maxlength="6">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3 style="color: rgb(94, 94, 94);">Payment</h3><hr style="margin-bottom: 40px;"/>
+            <label for="fname" style="color: grey;">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-paypal" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-amazon-pay" style="color:orange;"></i>
+              <i class="fa fa-cc-stripe" style="color:navy;"></i>
+              <i class="fa fa-cc-apple-pay" style="color:blue;"></i>
+              <i class="fa fa-cc-diners-club" style="color:orangered;"></i>
+              <i class="fa fa-cc-discover" style="color:blue;"></i>
+            </div>
+            <label for="cname" style="color: grey;">Name on Card</label>
+            <input type="text" required id="cname" minlength="3" maxlength="20" name="cardname" placeholder="Full Name"><span></span>
+            <label for="ccnum" style="color: grey;">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" minlength="16" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx" required><span></span>
+            <label for="expmonth" style="color: grey;">Exp Month</label>
+            <select id="expmonth" name="expmonth" placeholder="Month" style="width: 100%; height: 40px; margin-bottom: 20px; border: 1px solid silver; border-radius: 3px; padding-left: 5px;">
+                <option>January</option>
+                <option>Feburary</option>
+                <option>March</option>
+                <option>April</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            <div class="row" style="color: grey;">
+              <div class="col-50">
+                <label for="expyear" style="color: grey;">Exp Year</label>
+                <input type="number" id="expyear" name="expyear" placeholder="****" maxlength="4" minlength="4" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv" style="color: grey;">CVV</label>
+                <input type="password" required id="cvv" name="cvv" placeholder="***" maxlength="3" minlength="3" style="width: 100%; height: 40px; margin-bottom: 20px; border: 1px solid silver; border-radius: 3px; padding-left: 5px;">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> <span style="color: rgb(94, 94, 94);">Shipping address same as billing</span>
+        </label>
+        <input type="submit" value="Proceed to Pay" class="btn" onclick="fun1()">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+        <table id="list" style="width: 100%;">
+          
+        </table>
+        
+    </div>
+  </div>
+</div>
+</form>
+     <script>
+    var total = 0;
+      //  document.getElementsByClassName("fa fa-cart-plus").innerHTML  = localStorage.length;
+        doShowAll();
+        
+function doShowAll() {
+   // alert("inside doShowAll");
+        var key="";
+        var list = "<tr><th style='color:rgb(94, 94, 94);font-size:18px;'>Cart</th><th><i class='fa fa-cart-plus fa-lg' style='color: grey;'><b style='border-radius:50%; font-size:10px; padding:3px; margin:0px; padding-left:5px; padding-right:5px; position: relative; top:-10px; background:grey; color:white;'>"+localStorage.length+"</b></i></th></tr>\n";
+        var i = 0;
+        //For a more advanced feature, you can set a cap on max items in the cart.
+        for (i = 0; i <= localStorage.length-1; i++) {
+            key = localStorage.key(i);
+            list += "<tr><td><span><br></br></span><span style='font-weight:bold; font-size:15px; color: grey;'>" + key + "</span></td>\n<td><span><br></br></span><span style='font-weight:medium; font-size:15px; color: grey;'>$ "
+                    + localStorage.getItem(key) + "</span></td></tr>\n";
+            
+            total += parseInt(localStorage.getItem(key));
+
+        }
+        //If no item exists in the cart.
+        if (list == "<tr><th style='color:rgb(94, 94, 94);font-size:18px;'>Cart</th><th><i class='fa fa-cart-plus' style='color: grey;'></i></th></tr>\n") {
+            list += "<tr><td><i>Cart is Empty</i></td>\n";
+            total = 0;
+        }
+        list+="<tr><td><p style='color: rgb(94, 94, 94);'>Total</p></td><td><p> <span id='price' style='color:rgb(94, 94, 94) test-align:right;'><b></b></span></p></td></tr>"
+    
+     document.getElementById("list").innerHTML = list;
+     document.getElementById("price").innerHTML = '$' + total;
+}
+
+function fun1()
+    {
+        var b = document.getElementById("fname").value;
+        var c = document.getElementById("email").value;
+        
+        var d = document.getElementById("adr").value;
+        var e = document.getElementById("city").value;
+        var f = document.getElementById("state").value;
+        var g = document.getElementById("zip").value;
+        var h = document.getElementById("cname").value;
+        var i = document.getElementById("ccnum").value;
+        var j = document.getElementById("expmonth").value;
+        var k =  document.getElementById("expyear").value;
+        var l =  document.getElementById("cvv").value;
+        if( b.length > 4 && c.length > 2 && d.length > 2 && e.length > 2 && f.length > 2 && g.length > 2 && h.length > 2 && i.length == 16 && j.length > 2 && k.length > 2 && l.length == 3) {
+        var a = (10000*Math.random()).toPrecision(4);
+        var person = prompt("Please Enter the following OTP to confirm the order : " + a);
+        if(person != a)
+            alert("otp is wrong");
+            if(person==a)
+                {
+                    alert("Payment successfull!")
+                }
+        }
+        location.rload();
+    
+    }
+
+  </script>
+   
+</body>
+</html>
